@@ -49,6 +49,12 @@
                 </div>
                     
             </div> 
+            <div class="row">
+                <div class="col-sm-8 col-md-6 col-outline">
+                    col-sm-8 + col-md-6
+                </div>
+                    
+            </div> 
         </br>
             <p> Auto Cols</p>
             <div class="row">
@@ -128,6 +134,7 @@
                       Three
                     </div>       
                   </div>
+                  
                   <div class="row">
                     <div class="col col-outline">
                       Four
@@ -146,7 +153,7 @@
                     <div class="col-lg col-outline">
                       Eight
                     </div>
-                    <div class="col-lg col-outline"> <!-- this final one could just be col and it would work too, but seems more legit to make it consistent to show intent -->
+                    <div class="col-lg order-sm-first col-outline"> <!-- this final one could just be col and it would work too, but seems more legit to make it consistent to show intent -->
                       Nine
                     </div>         
                 </div> 
@@ -160,16 +167,16 @@
                     <p class="ps">Uncomment the following code below 'Div Sample' to see how it changes.</p>
                     <div>Set 1</div>
                     <div class="" style="border: 3px black solid; background-color: lime">
-                        <div class="bb" style="border: 3px black solid; background-color: gray">Nuetral</div>
+                        <div class="bb" style="border: 3px black solid; background-color: gray">No margin</div>
                         <div class="ml-1 bb" style="border: 3px black solid">ml-1</div>
                         <div class="mr-3 bb" style="border: 3px black solid">mr-3</div>
                         <div class="mx-2 bb" style="border: 3px black solid">mx-2</div> 
                     </div>
-                    <div>Test 2</div>
+                    <div>Padding 5</div>
                     <div class="p-5 bb">Padding 5</div>
-                    <div>Test 3</div>
+                    <div>Padding y axis 1</div>
                     <div class="py-1 bb">Test 3</div>
-                    <div>Test 4</div>
+                    <div>Margin x axis auto</div>
                     <div class="mx-auto bb">Test 4</div>
                 </div>
             <br/>
@@ -203,6 +210,7 @@
                 <p class="ps"><a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap Buttons</a></p>
                 <p class="ps">Change the white button to a blue button!</p>
                 <div class="col">
+                    <button type="button" class="btn cstm-css">Primary</button>
                     <button type="button" class="btn btn-primary">Primary</button>
                     <button type="button" class="btn btn-secondary">Secondary</button>
                     <button type="button" class="btn btn-danger">Danger</button>
@@ -235,7 +243,7 @@
                         <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
                         <!-- <input type="password" class="form-control" id="inputPassword3" placeholder="Password"> -->
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        <input type="password" class="form-control-lg" id="inputPassword3" placeholder="Password">
                         </div>
                     </div>
                     
@@ -281,8 +289,9 @@
                         <div class="col-sm-9">
                             <h2>Facts &amp; Figures</h2>
                             <div class="table-responsive">
-                                <table class="table">
                                 <!-- <table class="table"> -->
+                                <!-- <table class="table table-striped"> -->
+                                <table class="table table-striped table-bordered">
                                     <thead>
                                         <tr class="bg-primary text-light">
                                             <th></th>
@@ -364,48 +373,53 @@
         <div class="bottom-border">
             <h3>Week 3: __________________________________________</h3>
 
-            <p>///.fade .tab-pane///</p>
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                <a class="nav-link" id="settings-tab" data-toggle="tab" href="#nofade" role="tab" aria-controls="settings" aria-selected="false">NoFade1</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#nofade2" role="tab" aria-controls="settings" aria-selected="false">NoFade2</a>
-                </li>
-            </ul>
-            
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane fade active" id="home" role="tabpanel" aria-labelledby="home-tab">One</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Two</div>
-                <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">Three</div>
-                <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Four</div>
-                <div class="tab-pane" id="nofade" role="tabpanel" aria-labelledby="messages-tab">NoFade5</div>
-                <div class="tab-pane" id="nofade2" role="tabpanel" aria-labelledby="settings-tab">NoFade6</div>
-            </div>
-            
+                <p>///.fade .tab-pane///</p>
+                <a href="test.html">(See this link for a better illustration of 'fade'.</a>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#nofade" role="tab" aria-controls="settings" aria-selected="false">NoFade1</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#nofade2" role="tab" aria-controls="settings" aria-selected="false">NoFade2</a>
+                    </li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show in active" id="home" role="tabpanel" aria-labelledby="home-tab">One</div>
+                    <div class="tab-pane fade show in" id="profile" role="tabpanel2" aria-labelledby="profile-tab">Two</div>
+                    <div class="tab-pane fade show in" id="messages" role="tabpanel3" aria-labelledby="messages-tab">Three</div>
+                    <div class="tab-pane fade show in" id="settings" role="tabpanel4" aria-labelledby="settings-tab">Four</div>
+                    <div class="tab-pane" id="nofade" role="tabpanel5" aria-labelledby="messages-tab">NoFade5</div>
+                    <div class="tab-pane" id="nofade2" role="tabpanel6" aria-labelledby="settings-tab">NoFade6</div>
+                </div>
+                
             <p>///Collapse and Accordion///</p>
                 <div class="row row-content">
                     <div class="col">
+                        <!-- PARENT ACCORDION -->
                         <h3>ACCORDION</h3>
                         <div style="background-color: teal; padding:5px " id="accordion">
+                            <!-- CARD -->
                             <div class="card">
                                 <div role="tab" class="card-header">
+                                    <!-- COLLAPSED CONTENT TRIGGERS TARGET ID BOOTSTRAP-->
                                     <h4>
                                         <a data-toggle="collapse" data-target="#bootstrap">
-                                            TITLE "BOOTSTRAP"/COLAPSED CONTENT <small>TITLE/COLAPSED CONTENT</small>
+                                            TITLE "TESTER1"/COLLAPSED CONTENT
                                         </a>
                                     </h4>
+                                    <!-- SHOWN CONTENT COLLAPSES ON: 1) SELF CLICK 2) PARENT TELLS IT TO-->
                                     <div class="collapse show" id="bootstrap" data-parent="#accordion">
                                         <div class="card-body">
                                             <p class="d-none d-sm-block">SHOWING CONTENT</p>
@@ -413,11 +427,13 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card">
                                 <div role="tab" class="card-header">
                                     <h4>
                                         <a class="collapsed" data-toggle="collapse" data-target="#git">
-                                            TITLE/COLAPSED CONTENT <small>TITLE/COLAPSED CONTENT</small>                                    </a>
+                                            TITLE "TESTER2"/COLLAPSED CONTENT 
+                                        </a>
                                     </h4>
                                     <div class="collapse" id="git" data-parent="#accordion">
                                         <div class="card-body">
@@ -426,7 +442,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+
+                            <!-- <div class="card">
                                 <div role="tab" class="card-header">
                                     <h4>
                                         <a class="collapsed" data-toggle="collapse" data-target="#mongo">
@@ -439,6 +456,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card">
                                 <div role="tab" class="card-header">
                                     <h4>
@@ -451,7 +469,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -471,17 +489,14 @@
                 Tooltip on left
                 </button> -->
 
-                <!-- <script>
-                    $(function () {
-                      $('[data-toggle="tooltip"]').tooltip()
-                    })
-                  </script> -->
+            
 
+            </br>
             </br>
 
             <p>/// MODAL ///</p>
 
-                <p>Alerts!</p>
+                <p>Alert!</p>
 
                     <button onclick="myFunction()">Alert</button>
 
@@ -492,8 +507,9 @@
                     </script>
 
                 </br>
+                </br>
                     
-
+                <p>Basic Modal</p>
                 <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#testModal" >MODAL BASIC</a>
 
                 <div id="testModal" class="modal">
@@ -509,7 +525,7 @@
             </br>
             </br>
 
-            <p>///DISMISS MODAL EX.///</p>
+            <p>DISMISS MODAL EX.</p>
 
             <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#dismissModal" >MODAL DISMISS</a>
 
@@ -561,6 +577,19 @@
         </div>
     </div>
 
+    <div class="bottom-border">
+        <h3>Week 5: __________________________________________</h3>
+        
+    </div>
+
+
+
+
+
+
+
+
+    
     <footer>
         <div>
             <a href="#top"><h5>Back to top.</h5></a>
@@ -571,10 +600,15 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 </body>
 
 </html>
-
 
 
 

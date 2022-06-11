@@ -96,3 +96,7 @@ footer {
 .col-outline {
   border: 3px solid black;
 }
+
+.cstm-css {
+  background-color: teal;
+}
