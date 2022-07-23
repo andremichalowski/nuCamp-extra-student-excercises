@@ -11,7 +11,7 @@
         "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
         "imagemin": "imagemin img/* -o dist/img",
         "clean": "rimraf dist",
-        "usemin": "usemin bootstrap.html -d dist --htmlmin -o dist/bootstrap.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+        "usemin": "usemin bootstrap.html -d dist --htmlmin -o dist/bootstrap.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin react.html -d dist --htmlmin -o dist/react.html, && usemin test.html -d dist --htmlmin -o dist/test.html",
         "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
     },
     "repository": {
